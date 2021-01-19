@@ -3,39 +3,47 @@
 	margin: 0;
 	padding: 0;
 }
+div {
+	position: relative;
+}
 h1 {
-	margin-bottom: 15px; text-align: center;
+	margin-bottom: 15px; 
+    text-align: center;
 }
 h2 {
-	margin-bottom: 10px; 
 	border: 1px solid black;
 	text-align:center;
-	float: right;
+	position: absolute;
+	right: 0;
+	padding: .3%;
+	margin-right: 7.5%
 }
-p {
+.box {
 	border: 1px solid black;
 	background-color: LightGray;
 	width: 90%;
-	height: 150px;
-	margin-right: auto;
-	margin-left: auto;
-	font-family: Helvetica;
+	height: 200px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica;
 	color: solid black;
 	float: left;
-	padding: 10px;
+	padding-top: 35px;
+	padding-left: 35px;
+	padding-bottom: 35px;
+	overflow: auto;
 }
+
 #h2a {
-	background-color: Red;
-	float: right;
+	background-color: Red;	
 }
 #h2b {
 	background-color: Pink;
-	float: right;
 	color: White;
 }
 #h2c {
 	background-color: #FFD700;
-	float: right;
 }
 
 /* Resposive Framework */
@@ -47,7 +55,7 @@ p {
 @media (min-width: 992px) {
 	.col-lg-1, .col-lg-2, .col-lg-3 {
 		float: left;
-		border: 1px solid black;
+	/*	border: 1px solid black; */
 	    }
 		.col-lg-1 {
 			width: 33.33%;
@@ -66,13 +74,13 @@ p {
 		border: 1px solid black;
 	    }
 		.col-md-1 {
-			width: 33.33%;
+			width: 50%;
 		}
 		.col-md-2 {
-			width: 33.33%;
+			width: 50%;
 		}
 		.col-md-3 {
-			width: 33.33%;
+			width: 50%;
 		}
 	}
 /* Moble */
@@ -82,13 +90,12 @@ p {
 		border: 1px solid black;
 	    }
 		.col-sm-1 {
-			width: 33.33%;
+			width: 100%;
 		}
 		.col-sm-2 {
-			width: 33.33%;
+			width: 100%;
 		}
 		.col-sm-3 {
-			width: 33.33%;
+			width: 100%;
 		}
 	} 
-}
